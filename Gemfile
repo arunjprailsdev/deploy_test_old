@@ -27,6 +27,13 @@ gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
+
+group :development do
+  gem 'capistrano', '~> 3.8'
+  gem 'capistrano-bundler', '~> 1.2'
+  gem 'capistrano-rails', '~> 1.2', '>= 1.2.3'
+  gem 'capistrano-rbenv', github: "capistrano/rbenv"
+end
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
