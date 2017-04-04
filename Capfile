@@ -1,5 +1,4 @@
-require 'capistrano/bundler'
-require 'capistrano/rails'
+
 # Load DSL and set up stages
 require "capistrano/setup"
 
@@ -30,8 +29,10 @@ install_plugin Capistrano::SCM::Git
 #
 # require "capistrano/rvm"
  require "capistrano/rbenv"
+ require 'capistrano/bundler'
+ require 'capistrano/rails'
   set :rbenv_type, :user # or :system, depends on your rbenv setup
-  set :rbenv_ruby, '2.4.1-p111'
+  set :rbenv_ruby, '2.4.1'
 # require "capistrano/chruby"
 # require "capistrano/bundler"
 # require "capistrano/rails/assets"
